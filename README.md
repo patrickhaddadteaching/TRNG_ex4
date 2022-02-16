@@ -4,7 +4,7 @@ In this exercise, you can play with a Monobit test such as the one required in t
 
 By scanning or clicking on the QR-code you can launch the application and observe how the threshold and the block size are affecting the error Type 1 and 2 that are introduced in Section 1.6 of this chapter.
 
-<p>This test triggers alarm if the number of bits equal to 1 is bigger than <sup>Number_of_inputs_bits</sup><sub>2</sub>+relative_threshold or smaller than <sup>Number_of_inputs_bits</sup><sub>2</sub>-relative_threshold.</p>
+<p>This test triggers alarm if the number of bits equal to 1 is bigger than <sup>1</sup><sub>2</sub> &#x22C5 Number_of_inputs_bits + relative_threshold or smaller than <sup>1</sup><sub>2</sub> &#x22C5 Number_of_inputs_bits-relative_threshold.</p>
 
 
 <p>Your goal is to find the the lowest relative_threshold allowing to have &#x3B1 bigger than 10<sup>-6</sup> and you should note the highest H<sub>1</sub> for which &#x3B2 is smaller than 10<sup>-6</sup>.</p>
