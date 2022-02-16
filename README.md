@@ -10,7 +10,7 @@ By scanning or clicking on the QR-code you can launch the application and observ
 <p>Your goal is to find the the lowest relative_threshold allowing to have &#x3B1 bigger than 10<sup>-6</sup> and you should note the highest H<sub>1</sub> for which &#x3B2 is smaller than 10<sup>-6</sup>.</p>
   
 <p>This H<sub>1</sub> will be the lowest entropy rate at TRNG output, which will not trigger alarm.</p>
-<p>You should repeat the procedure for $lock_sizes=4096, 8192, 16384 and 32768.</p>
+<p>You should repeat the procedure for block_sizes=4096, 8192, 16384 and 32768.</p>
 
 
 
