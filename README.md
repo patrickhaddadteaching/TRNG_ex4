@@ -13,11 +13,12 @@ You should repeat the procedure for $Block\ sizes=4096, 8192, 16384, 32768$.
 Now, can you answer the following question? Which parameter values of the Monobit test are required by the AIS31 and FIPS 140-1 test suites?
 
 ## How to launch the exercise ?
-The exercise is a jupyter notebook compatible with voila.
+* We can execute this exercise on [Colab](https://colab.research.google.com/github/patrickhaddadteaching/TRNG_ex4/blob/main/TRNG_ex4_nb.ipynb)
+* The exercise is a jupyter notebook compatible with voila.
 The following libraries are required:
-* numpy
-* matplotlib
-* scipy
+    * numpy
+    * matplotlib
+    * scipy
 ## Examples of procedures to execute the exercise with different systems.
 1. Windows
     * First of all, Let clone this repositorie
