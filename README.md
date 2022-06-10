@@ -1,17 +1,47 @@
-Repository for Exercise 1.4 of Embedded Cryptography Book Section 9
+In this exercise, you can analyze the impact of the Monobit test parameters on the test results.
 
-In this exercise, you can play with a Monobit test such as the one required in the AIS31 and FIPS 140-1 test suites. 
+You can launch the application and observe how the threshold and the block size  affect  Type 1 and 2 errors that are introduced in Section 1.6 of this chapter.
 
-By scanning or clicking on the QR-code you can launch the application and observe how the threshold and the block size are affecting the error Type 1 and 2 that are introduced in Section 1.6 of this chapter.
+This test triggers an alarm if the number of bits equal to 1 is bigger than $\frac{Number\ of\ input\ bits}{2}+relative\ threshold$ or is smaller than $\frac{Number\ of\ input\ bits}{2}-relative\ threshold$.
 
-<p>This test triggers alarm if the number of bits equal to 1 is bigger than <sup>1</sup>&#8260<sub>2</sub> &#x22C5 Number_of_inputs_bits + relative_threshold or smaller than <sup>1</sup>&#8260<sub>2</sub> &#x22C5 Number_of_inputs_bits-relative_threshold.</p>
+Your goal is to find the the lowest $relative\ threshold$ that makes it possible for $\alpha$ to be bigger than $10^{-6}$ and you should note the highest Shannon entropy ($H_{1}$) for which $\beta$ is smaller than $10^{-6}$.
 
+This $H_{1}$ will be the lowest entropy rate at the TRNG output that will not trigger the alarm.
 
-<p>Your goal is to find the the lowest relative_threshold allowing to have &#x3B1 bigger than 10<sup>-6</sup> and you should note the highest H<sub>1</sub> for which &#x3B2 is smaller than 10<sup>-6</sup>.</p>
-  
-<p>This H<sub>1</sub> will be the lowest entropy rate at TRNG output, which will not trigger alarm.</p>
-<p>You should repeat the procedure for block_sizes=4096, 8192, 16384 and 32768.</p>
+You should repeat the procedure for $Block\ sizes=4096, 8192, 16384, 32768$.
 
+Now, can you answer the following question? Which parameter values of the Monobit test are required by the AIS31 and FIPS 140-1 test suites?
 
-
-<p><a href="https://mybinder.org/v2/gh/patrickhaddadteaching/TRNG_ex4/main?urlpath=voila%2Frender%2FTRNG_ex4_nb.ipynb" target="_blank" rel="noopener noreferrer">  <img src="ex4.png" width="50%" height="50%"></a></p>
+## How to launch the exercise ?
+The exercise is a jupyter notebook compatible with voila.
+The following libraries are required:
+* numpy
+* matplotlib
+* scipy
+## Examples of procedures to execute the exercise with different systems.
+1. Windows
+    * First of all, Let clone this repositorie
+    ```
+     git clone https://github.com/patrickhaddadteaching/TRNG_ex1
+    ```
+    * [Download and install the latest Miniconda](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links).
+    * Open the Anaconda Powershell Prompt associated to Miniconda3 and type the following commands to install  to install all the dependencies required by this exercise.
+     ```
+        conda install jupyter
+        conda install numpy
+        conda install scipy
+        conda install matplotlib
+        conda install -c conda-forge voila    
+      ```
+    
+    * Now, you can either launch the notebook by executing the folowing command in the directory where you cloned this repositorie.
+    ```
+    jupyter-notebook.exe .\TRNG_ex4_nb.ipynb
+    ```
+    
+    * Or, you can directly launch it with voila  by executing the folowing command in the directory where you cloned this repositorie.
+    ```
+    voila.exe .\TRNG_ex4_nb.ipynb
+    ```
+2. Linux
+3. Mac OS X
