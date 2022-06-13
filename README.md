@@ -14,6 +14,7 @@ Now, can you answer the following question? Which parameter values of the Monobi
 
 ## How to launch the exercise ?
 * We can execute this exercise on [Colab](https://colab.research.google.com/github/patrickhaddadteaching/TRNG_ex4/blob/main/TRNG_ex4_nb.ipynb)
+    * Then press Ctrl+F9 or click on Runtime/Run All
 * The exercise is a jupyter notebook compatible with voila.
 The following libraries are required:
     * numpy
