@@ -150,9 +150,9 @@ def plot_graph(nb_of_required_bits, delta_Th,h_in):
     v_items[3][2].value='<p align="center"; style="color:#FF0000";><b>&#946=%.3E</b></p>'%(1-v_prob[index_pin])
 
 
-w_nb_of_required_bits=widgets.IntSlider(description=r'$Number\ of\ input\ bits$',style = {'description_width': 'initial'},value=current_required_bits,min=0,max=max_required_bits)
-w_Th=widgets.IntSlider(description=r'$relative\ threshold$',style = {'description_width': 'initial'},value=current_relative_th,min=1,max=max_required_bits, step = 1)
-w_p_in=widgets.FloatSlider(description=r'$H_{1}$',style = {'description_width': 'initial'},value=current_h_value,min=v_h.min(),max=v_h.max())
+w_nb_of_required_bits=widgets.IntSlider(description='Number of input bits',style = {'description_width': 'initial'},value=current_required_bits,min=0,max=max_required_bits)
+w_Th=widgets.IntSlider(description='relative threshold',style = {'description_width': 'initial'},value=current_relative_th,min=1,max=max_required_bits, step = 1)
+w_p_in=widgets.FloatSlider(description='H<sub>1</sub>',style = {'description_width': 'initial'},value=current_h_value,min=v_h.min(),max=v_h.max())
 #interactive_plot = interactive(plot_graph,{'manual': True}, nb_of_required_bits=w_nb_of_required_bits,delta_Th =w_Th ,h_in=w_p_in)
 interactive_plot = interactive(plot_graph, nb_of_required_bits=w_nb_of_required_bits,delta_Th =w_Th ,h_in=w_p_in)
 
